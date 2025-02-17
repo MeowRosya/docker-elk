@@ -15,6 +15,7 @@ users_passwords=(
 	[kibana_system]="${KIBANA_SYSTEM_PASSWORD:-}"
 	[metricbeat_internal]="${METRICBEAT_INTERNAL_PASSWORD:-}"
 	[filebeat_internal]="${FILEBEAT_INTERNAL_PASSWORD:-}"
+	[winlogbeat_internal]="${WINLOGBEAT_INTERNAL_PASSWORD:-}"
 	[heartbeat_internal]="${HEARTBEAT_INTERNAL_PASSWORD:-}"
 	[monitoring_internal]="${MONITORING_INTERNAL_PASSWORD:-}"
 	[beats_system]="${BEATS_SYSTEM_PASSWORD=:-}"
@@ -25,6 +26,7 @@ users_roles=(
 	[logstash_internal]='logstash_writer'
 	[metricbeat_internal]='metricbeat_writer'
 	[filebeat_internal]='filebeat_writer'
+	[winlogbeat_internal]='winlogbeat_writer'
 	[heartbeat_internal]='heartbeat_writer'
 	[monitoring_internal]='remote_monitoring_collector'
 )
@@ -37,6 +39,7 @@ roles_files=(
 	[logstash_writer]='logstash_writer.json'
 	[metricbeat_writer]='metricbeat_writer.json'
 	[filebeat_writer]='filebeat_writer.json'
+	[winlogbeat_writer]='winlogbeat_writer.json'
 	[heartbeat_writer]='heartbeat_writer.json'
 )
 
